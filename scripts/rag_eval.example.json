@@ -1,0 +1,22 @@
+[
+  {
+    "query": "磁盘使用率过高怎么办",
+    "relevant_sources": ["disk_high_usage.md"]
+  },
+  {
+    "query": "服务不可用如何排查",
+    "relevant_sources": ["service_unavailable.md"]
+  },
+  {
+    "query": "接口响应变慢怎么处理",
+    "relevant_sources": ["slow_response.md"]
+  },
+  {
+    "query": "内存使用率过高如何处理",
+    "relevant_sources": ["memory_high_usage.md"]
+  },
+  {
+    "query": "CPU 使用率过高怎么办",
+    "relevant_sources": ["cpu_high_usage.md"]
+  }
+]
