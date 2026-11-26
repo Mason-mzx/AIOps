@@ -1,0 +1,22 @@
+name: RepoPilot syntax demo
+
+on:
+  pull_request:
+    paths:
+      - demo/ci_syntax_demo.py
+      - .github/workflows/repopilot-syntax-demo.yml
+
+permissions:
+  contents: read
+
+jobs:
+  python-syntax:
+    if: github.head_ref == 'demo/repopilot-syntax-ci'
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Check demo file syntax
+        run: python3 -m py_compile demo/ci_syntax_demo.py
